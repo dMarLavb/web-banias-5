@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+li {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.header-area {
+  background-color: #cde4f7;
+  display: flex;
+  align-items: stretch;
+  border-bottom: 2px solid #000;
+  padding: 10px;
+}
+
+.block-x {
+  width: 200px;
+  min-width: 120px;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.block-1 {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.middle-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+  align-items: stretch;
+}
+
+.block-2 {
+  background-color: #ffe4cd;
+  width: 20%;
+  border-right: 1px solid #000;
+  padding: 10px;
+}
+
+.center-column {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.block-3 {
+  background-color: #eaf3dd;
+  border-bottom: 1px solid #000;
+  padding: 15px;
+  text-align: center;
+}
+
+.block-4 {
+  background-color: #ffffff;
+  flex-grow: 1;
+  padding: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.block-6 {
+  background-color: #eaf3dd;
+  padding: 15px;
+  text-align: center;
+}
+
+.block-5 {
+  background-color: #ffe4cd;
+  width: 20%;
+  border-left: 1px solid #000;
+  padding: 10px;
+}
+
+.footer-area {
+  background-color: #cde4f7;
+  display: flex;
+  align-items: stretch;
+  border-top: 2px solid #000;
+  padding: 10px;
+}
+
+.block-7 {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.block-y {
+  width: 200px;
+  min-width: 120px;
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 10px;
+  margin-left: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.menu {
+  list-style-type: none;
+}
+.menu-item {
+  margin-bottom: 10px;
+}
+.link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  white-space: normal;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.title-main {
+  display: none;
+}
+
+.h1-text {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.67em;
+  line-height: 1.2;
+  color: #111;
+}
+.h2-text {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.75em;
+  color: #222;
+}
+.h3-text {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin-bottom: 0.8em;
+  color: #333;
+}
+.h4-text {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #444;
+}
+.h5-text {
+  font-size: 0.83em;
+  font-weight: bold;
+  margin-bottom: 1.2em;
+  color: #555;
+}
+.h6-text {
+  font-size: 0.67em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.useful-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  max-width: 100%;
+  width: 80px;
+  height: auto;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-area {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .block-x {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .block-1 {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .middle-wrapper {
+    flex-direction: column;
+  }
+
+  .block-2,
+  .center-column,
+  .block-5 {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+  }
+
+  .menu-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .link {
+    padding: 10px;
+  }
+
+  .footer-area {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .block-y {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    order: -1;
+  }
+
+  .block-7 {
+    width: 100%;
+    padding-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+}
