@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  /*  // === ЗАВДАННЯ 1: Поміняти місцями контент блоків «2» та «5» ===
+  // === ЗАВДАННЯ 1: Поміняти місцями контент блоків «2» та «5» ===
   function swapBlocks() {
     const block2 = document.querySelector(".block-2");
     const block5 = document.querySelector(".block-5");
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
     block4.appendChild(resultDiv);
   }
   calculatePentagonArea();
-  
+
   // === ЗАВДАННЯ 3: Перевертання числа (Cookies) ===
   function handleNumberReversal() {
     const block4 = document.querySelector(".block-4");
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   handleNumberReversal();
-  
+
   // === ЗАВДАННЯ 4: Зміна кольору рамок (LocalStorage) ===
   function handleBorderColor() {
     const block4 = document.querySelector(".block-4");
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Функція застосування кольору
     function applyBorderColor(color) {
-      // Вибираємо всі блоки, що мають клас, який починається на block- (крім x та y, якщо треба)
+      // Вибираємо всі блоки, що мають клас, який починається на block-
       // Але в завданні сказано 1..7. Перерахуємо їх явно або через цикл.
       const blocks = document.querySelectorAll(
         ".block-1, .block-2, .block-3, .block-4, .block-5, .block-6, .block-7"
@@ -144,13 +144,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   handleBorderColor();
-  */
-  // === ЗАВДАННЯ 5: CSS редактор (ВИПРАВЛЕНО) ===
+
+  // === ЗАВДАННЯ 5: CSS редактор ===
   function handleCssEditor() {
     const blockX = document.querySelector(".block-x");
     const block4 = document.querySelector(".block-4");
 
-    // Створюємо (або знаходімо) спеціальний стиль-блок для наших правил
+    // Створюємо спеціальний стиль-блок для наших правил
     let styleTag = document.getElementById("custom-css-style");
     if (!styleTag) {
       styleTag = document.createElement("style");
